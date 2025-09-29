@@ -25,4 +25,4 @@ export default defineConfig({
 
   // 5. The insecure 'define' block for the API key has been REMOVED.
   // You should handle your API key using Vite's built-in environment variables.
-});
+});1
