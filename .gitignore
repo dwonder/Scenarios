@@ -1,5 +1,21 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+# ----------------------------------------------------------------
+/node_modules
+
+
+# Build & Compilation Output
+# ----------------------------------------------------------------
+/dist
+/dist-ssr
+/build
+/coverage
+
+
 # Logs
-logs
+# ----------------------------------------------------------------
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,16 +23,32 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
 
-# Editor directories and files
+# Local Environment Variables
+# Never commit secrets!
+# ----------------------------------------------------------------
+*.local
+.env
+.env.*
+!.env.example
+
+
+# Operating System & IDE Files
+# ----------------------------------------------------------------
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VSCode
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+
+# JetBrains (WebStorm, etc.)
+.idea/
+
+# Visual Studio
 *.suo
 *.ntvs*
 *.njsproj
