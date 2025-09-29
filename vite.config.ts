@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   // 1. Set the base path for GitHub Pages deployment.
   // This must match your repository name.
-  base: '/TrainingModule/',
+  base: '/Scenarios/',
 
   // 2. Configure the local development server (optional but good to have).
   server: {
